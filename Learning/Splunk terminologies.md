@@ -1,0 +1,18 @@
+Search on [Splexicon](https://docs.splunk.com/Splexicon)
+Use Splexicon:{word} to search specific {word}
+
+## Important ones
+- **Ad-Hoc Search**: An unscheduled search. Use ad hoc searches to explore your data or to build a search incrementally. Ad hoc searches are most commonly run from the Search bar. You can save ad hoc searches as dashboard panels and scheduled reports.
+- **App**: A custom solution running on the Splunk platform that packages specific files and settings to address specific use cases. An app can contain one or more views and can include knowledge objects such as reports, lookups, scripted inputs, and modular inputs. An app sometimes depends on one or more add-ons for specific functionality.
+- **Bucket**: A file system directory containing a Splunk Enterprise *index*.
+- **Dashboard**: A user interface associated with an app. Dashboard Studio dashboards have one or more visualizations. Classic Simple XML dashboards have one or more visualization panels. You can build dashboards when saving a search or visualization.
+- **Deployment Apps**: A unit of content deployed by the deployment server to a group of deployment clients. Deployment apps can be fully developed apps, such as those available in Splunkbase, or they can be simple groups of configurations.
+- **Deployment Server**: A Splunk Enterprise instance that acts as a centralized configuration manager, grouping together and collectively managing any number of Splunk Enterprise instances. Instances that are remotely configured by deployment servers are called deployment clients. The deployment server downloads updated content, such as configuration files and apps, to deployment clients. Units of such content are known as deployment apps.
+- **Distributed Search**: A deployment topology that portions search management and search fulfillment/indexing activities across multiple Splunk Enterprise instances. In distributed search, a Splunk Enterprise instance, referred to as the search head, distributes search requests to other instances, called search peers, which perform the actual searching, as well as the data indexing. The search head merges the results back to the user.
+- **Event**: A single piece of data in Splunk software, similar to a record in a log file or other data input. When data is indexed, it is divided into individual events. Each event is given a timestamp, host, source, and source type.
+- **Forwarder**: A Splunk Enterprise instance that forwards data to another Splunk Enterprise instance, such as an indexer or another forwarder, or to a third-party system.
+- **Index**: The repository for data. When the Splunk platform indexes raw data, it transforms the data into searchable events.
+- **Indexer**: A Splunk Enterprise instance that indexes data, transforming raw data into events and placing the results into an index. It also searches the indexed data in response to search requests.
+- **Search Head**: In a distributed search environment, a Splunk Enterprise instance that handles search management functions, directing search requests to a set of search peers and then merging the results back to the user.
+- **Universal Forwarder**: The universal forwarder is a dedicated, streamlined version of Splunk Enterprise that contains only the essential components needed to forward data. The universal forwarder does not support python and does not expose a UI. A Splunk Enterprise instance can function as both a search head and a search peer. A search head that performs only searching, and not any indexing, is referred to as a dedicated search head.
+- 

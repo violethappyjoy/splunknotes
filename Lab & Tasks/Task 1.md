@@ -1,0 +1,31 @@
+## Step 1 & 2 - Installation of Splunk
+- Download using `wget` from [Splunk Website](https://www.splunk.com)
+- On Ubuntu instance: [[Installation using .deb]] or [[Installation using .tar]]
+- On Red Hat Instance: [[Installation on Red Hat(.rpm)]]
+- Configure SH, LM DS and DMC
+- Disable UI
+## Terminology
+-  **Search Head (SH)**
+    - A Splunk instance that handles user searches.
+    - The SH distributes search requests to indexers and consolidates the results.
+    - In distributed environments, you typically have one or more SHs so users can run searches against data residing on multiple indexers.
+- **License Master (LM)**
+    - The Splunk instance that manages licensing for all other Splunk components in your environment (search heads, indexers, etc.).
+    - Ensures you do not exceed your purchased ingestion daily volume.
+    - All other Splunk instances must communicate with the LM to stay compliant.
+- **Deployment Server (DS)**
+    - Central configuration manager for Splunk forwarders (and sometimes other Splunk instances).
+    - You create “apps” or “server classes” on the DS, which push configuration files (inputs.conf, outputs.conf, etc.) to forwarders.
+    - Greatly simplifies large-scale management of Splunk configs.
+- **Distributed Management Console (DMC)**
+    - Provides an overview of the entire Splunk deployment’s health, performance metrics, indexing throughput, search concurrency, etc.
+    - Typically enabled on one Splunk instance (often on a search head) to gain insights into the environment.
+## Study
+- [[Distributed Deployment]]
+- [[General Ports]]
+- [How Splunk Enterprise licensing works](https://docs.splunk.com/Documentation/Splunk/8.2.5/Admin/HowSplunklicensingworks)
+- [Updating Splunk Enterprise Instances/ Deployment Server](https://docs.splunk.com/Documentation/Splunk/latest/Updating/Aboutdeploymentserver)
+- [Deploy a distributed search environment](https://docs.splunk.com/Documentation/Splunk/9.4.0/DistSearch/Overviewofconfiguration)
+- [What is deployment server, About DS](https://docs.splunk.com/Documentation/Splunk/9.3.2/Updating/Aboutdeploymentserver?ref=hk)
+- [Setup Deployment Server](https://docs.splunk.com/Documentation/MSExchange/4.0.4/DeployMSX/Setupadeploymentserver)
+- [Configure Deployment Clients](https://docs.splunk.com/Documentation/Splunk/9.4.0/Updating/Configuredeploymentclients)

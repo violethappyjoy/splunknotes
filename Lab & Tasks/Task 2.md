@@ -1,0 +1,3 @@
+## Study
+- [[Splunk Data Lifecycle]]
+- 
