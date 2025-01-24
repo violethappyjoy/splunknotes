@@ -1,3 +1,10 @@
+## What is Splunk?
+Splunk is a software platform used for searching, analyzing, and visualizing machine-generated data from various sources like applications, servers, networks, and devices in real-time. It is widely used for log management, monitoring, security, and business intelligence.
+#### Common Use Cases
+- IT Operations: Monitoring infrastructure and troubleshooting issues.
+- Security: Detecting and responding to threats through Security Information and Event Management (SIEM).
+- DevOps: Observability into CI/CD pipelines and application performance.
+- Business Insights: Analyzing customer behavior or operational data.
 ## [[Task 1]] - Install Splunk and configure distributed arch.
 Step 1: Install Splunk on instance 1 and configure SH(Search Head), LM(License Master) DS(Deployment Server) and DMC(Distributed management Console)
 Step 2: Install Splunk on instance 2, 3 and 4. Disable UI
